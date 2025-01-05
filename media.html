@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Media</title>
+    </head>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <body>
+
+    <h1>Media Exercise</h1>
+
+    <a href="biodata.html" target="_blank">Biodata</a>
+   
+    <a href="malaysia map.html" target="_blank">Malaysia map</a>
+   
+    <a href="personal website.html" target="_blank">Personal website</a>
+
+    <a href="list & definition.html" target="_blank">Types Of List</a>
+   
+    <a href="tables.html" target="_blank">tables</a>
+   
+    <a href="tab_index.html" target="_blank">index</a>
+   
+    <a href="gallery.html" target="_blank">gallery</a>
+   
+    <a href="accesskey.html" target="_blank">accesskey</a>
+
+    <br>
+    <br>
+
+ 
+
+   
+    
+    <div style="text-align: center;">
+    <audio controls>
+        <source src="audio/traveler.mp3" type="audio/ogg">
+        <source src="audio/traveler.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    </div>
+
+    <hr color="black">
+
+    <div style="text-align: center;">
+    <video controls>
+        <source src="video/emoji movie.MP4" type="video/mp4">
+        <source src="audio/traveler.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+
+    </video>
+    </div>
+<br>
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source src="video/emoji movie.MP4" type="video/mp4">
+          <source src="video/emoji movie.MP4" type="video/ogg">
+          Your browser does not support HTML video.
+        </video>
+      </div> 
+      
+      <script> 
+      var myVideo = document.getElementById("video1"); 
+      
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      
+      function makeBig() { 
+          myVideo.width = 560; 
+      } 
+      
+      function makeSmall() { 
+          myVideo.width = 320; 
+      } 
+      
+      function makeNormal() { 
+          myVideo.width = 420; 
+      } 
+      </script> 
+      <br>
+      <div style="text-align: center;">>
+      <td>
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/PrkNZRd9G88?si=uNW0SYYhnVr9nX-_"></iframe>
+      </td>
+      </div
+
+</body>      
+</html>
+

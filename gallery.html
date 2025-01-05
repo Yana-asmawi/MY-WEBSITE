@@ -2,102 +2,230 @@
     <head>
         <title>Gallery</title>
     </head>
-    <style>
-        body
-        {
-            background-image:url(images/c:\Users\LENOVO\Downloads\bg japan.jpg);
-        }
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+<style>
+    table {
+        width: 55%;
+        margin: 2px auto;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        border: 1px solid white;
+        padding: 1px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #ca99ab;
+        color: #ffffff;
+    }
+    
+    td {
+        background-color: #ca99ab;
+        color: #fff;
+    }
+ h2{
+    font-size: clamp(1rem, 2rem + 5vw, 3rem);
+}
+
+h2{
+    color: #e7c3db;
+    text-shadow: 0 0 10px #ca99ab;
+}
+h1{
+    font-size: clamp(1rem, 2rem + 5vw, 3rem);
+}
+
+h1{
+    color: lavenderblush;
+    text-shadow: 0 0 10px lavender;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery:hover{
+    transform: scale(1.05);
+    border-color: #000042;
+}
+
+.gallery img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #ca99ab;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.gallery .description{
+    padding:10px;
+    text-align: center;
+    color: #ffffff;
+}
     </style>
 
     <body>
-
-        <h1>JAPAN</h1>
-       
-
-      
-
-        <div align="center">
-        
-        <hr size="7" color="a0a0f3" width="90%">
-
-
-        </a><img src="JAPAN.webp" 
-        height="200" width="300" border="2" alt="Hibaraki Japan" hspace="10" vspace="10">
-    
-        <img src="c:\Users\LENOVO\Downloads\JAPAN\photo-1524413840807-0c3cb6fa808d.jpeg"
-         height="200" border="2" alt="Kyoto Japan" hspace="10" vspace="10">
-
-         <img src="c:\Users\LENOVO\Downloads\JAPAN\kyoto.jpg" width="300" border="2" hspace="10" vspace="10">
-
+        <header>
+        <div class="header">
+            <span>Hello Everyone</span>
+          </div>
+          <div class="image">
+          <img src="images/mine.jpg.jpg" alt="">
         </div>
 
-        <hr size="7" color="a0a0f3" width="90%">
+        <nav>
+            <div class="nav-container"></div>
+
+            <ul>
+                <div class="links"></div>
+                <li><a href="index.html" target="_parent"></a>Home</a></li>
+                <li><a href="gallery.html" target="_self">Gallery</a></li>
+                <li><a href="education.html" target="_self">Education</a></li>
+                <li><a href="life.html" target="_self">My Life</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <body>
+
+        <h1>My Gallery</h1>
+        <br>
+        <h2>Picture Of Myself</h2>
+        <div class="gallery">
+            <a target="_self" href="images/mine.jpg.jpg">
+            <img src="images/mine.jpg.jpg" alt="image1" onclick="openModal(this)">
+        </a>
+        <a target="_self" href="images/my picture.jpg">
+            <img src="images/my picture.jpg" alt="image2" onclick="openModal(this)">
+        </a>
+        <a target="_self" href="images/my.jpg">
+            <img src="images/my.jpg" alt="image3" onclick="openModal(this)">
+        </a>
+            
+        </div>
+        <br>
+        <hr size="7" color="#ca99ab" width="100%">
+        <br>
+        <h2>My Family</h2>
+        <div class="gallery">
+            <a target="_self" href="images/fam.jpg">
+            <img src="images/fam.jpg" alt="image4" onclick="openModal(this)">
+        </a>
+        <a target="_self" href="images/mama.jpg">
+            <img src="images/mama.jpg" alt="image5" onclick="openModal(this)">
+        </a>
+        <a target="_self" href="images/sis.jpg">
+            <img src="images/sis.jpg" alt="image6" onclick="openModal(this)">
+        </a>
+
+        <a target="_self" href="images/baby.jpg">
+            <img src="images/baby.jpg" alt="image8" onclick="openModal(this)">
+        </a>
+        <a target="_self" href="images/family.jpg">
+        <img src="images/family.jpg" style="float:left;" alt="image7" onclick="openModal(this)">
+        <div class="description"> My family is consisting of my father, mother, older brother, 
+            older sister, me, and my 2 younger sister.
+        </br></div>
+        <table>
+            <tr>
+                <th>Family</th>
+                <th>Name</th>
+                <th>Birth of Date</th>
+            </tr>
+            <tr>
+                <td>Father</td>
+                <td>Asmawi Bin Abu Omar</td>
+                <td>14.03.1975</td>
+            </tr>
+            <tr>
+                <td>Mother</td>
+                <td>Jumiah Binti Abdul Wahed</td>
+                <td>04.08.1978</td>
+            </tr>
+            <tr>
+                <td>Older Brother</td>
+                <td>Muhd. Adib Syazwan </td>
+                <td>13.08.1998</td>
+            </tr>
+            <tr>
+                <td>Older Sister</td>
+                <td>Intan Zulaikha</td>
+                <td>16.04.2000</td>
+            </tr>
+            <tr>
+                <td>Me</td>
+                <td>Intan Zuliyana</td>
+                <td>01.05.2004</td>
+            </tr>
+            <tr>
+                <td>Younger Sister</td>
+                <td>Intan Qurratu' Ain</td>
+                <td>31.05.2013</td>
+            </tr>
+            <tr>
+                <td>Younger Sister</td>
+                <td>Intan Qisya Naura</td>
+                <td>12.01.2018</td>
+            </tr>
+            </table>
+            <br>
+           <br>
+           <hr size="7" color="#ca99ab" width="100%">
+           <br>
+
+           <h2>My Friends</h2>
+           <div class="gallery">
+               <a target="_self" href="images/mimi.jpg">
+               <img src="images/mimi.jpg" alt="image" onclick="openModal(this)">
+           </a>
+           <a target="_self" href="images/iqa.jpg">
+               <img src="images/iqa.jpg" alt="image5" onclick="openModal(this)">
+           </a>
+           <a target="_self" href="images/friends.jpg">
+               <img src="images/friends.jpg" alt="image6" onclick="openModal(this)">
+           </a>
+
+           <a target="_self" href="images/photo1.jpg.jpg">
+            <img src="images/photo1.jpg.jpg" alt="image6" onclick="openModal(this)">
+        </a>
+        <a target="_self" href="images/pjoto2.jpg.jpg">
+            <img src="images/pjoto2.jpg.jpg" alt="image6" onclick="openModal(this)">
+        </a>
 
 
-        <h2>INTRODUCTION</h2>
-
-        <h4 style="text-align: justify;">
-        <img src="c:\Users\LENOVO\Downloads\japan flag.png" style="float:left;" hspace="10" vspace="5" width="200" border="2">
+           <hr size="7" color="#ca99ab" width="100%">
+           <br>
+           
+           <h2>5A</h2>
         
-        Japan is an island country in East Asia. It is located in the Pacific Ocean off the northeast coast of the Asian 
-        mainland, and is bordered on the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the
-        East China Sea in the south.The Japanese archipelago consists of four major islands—Hokkaido, Honshu, Shikoku, and Kyushu—and thousands of smaller islands, 
-        covering 377,975 square kilometres (145,937 sq mi). Japan has a population of nearly 124 million as of 2024, and is the eleventh-most populous country.
-        Its capital and largest city is Tokyo; the Greater Tokyo Area is the largest metropolitan area in the world, with more than 38 million inhabitants as 
-        of 2016. Japan is divided into 47 administrative prefectures and eight traditional regions. About three-quarters of the country's terrain 
-        is mountainous and heavily forested, concentrating its agriculture and highly urbanized population along its eastern coastal plains.
-        The country sits on the Pacific Ring of Fire, making its islands prone to destructive earthquakes and tsunamis.
-        The name "Japan" is based on Min or Wu Chinese pronunciations of 日本 and was introduced to European languages through early trade. 
-        In the 13th century, Marco Polo recorded the Early Mandarin Chinese pronunciation of the characters 日本國 as Cipangu.
-        The old Malay name for Japan, Japang or Japun, was borrowed from a southern coastal Chinese dialect and encountered by Portuguese 
-        traders in Southeast Asia, who brought the word to Europe in the early 16th century.  The first version of the name in English 
-        appears in a book published in 1577, which spelled the name as Giapan in a translation of a 1565 Portuguese letter.</h4>
+           <div class="gallery">
+               <a target="_self" href="images/girl.jpg">
+               <img src="images/girl.jpg" alt="image" onclick="openModal(this)">
+           </a>
+           <a target="_self" href="images/girls.jpg">
+               <img src="images/girls.jpg" alt="image5" onclick="openModal(this)">
+           </a>
+           <a target="_self" href="images/friends.jpg">
+               <img src="images/friends.jpg" alt="image6" onclick="openModal(this)">
+           </a>
 
-        <br clear="all">
-
-        <h2 align="left"> Histrory of Japan</h2>
-        
-        <h4 style="text-align:justify;">
-            <img src="c:\Users\LENOVO\Downloads\japan.gif" style="float: left;" hspace="10" width="300" border="3">
-            Modern humans arrived in Japan around 38,000 years ago (~36,000 BC), marking the beginning of the Japanese 
-            Paleolithic. This was followed from around 14,500 BC (the start of the Jōmon period) by a Mesolithic to 
-            Neolithic semi-sedentary hunter-gatherer culture characterized by pit dwelling and rudimentary agriculture.
-            Clay vessels from the period are among the oldest surviving examples of pottery. The Japonic-speaking 
-            Yayoi people entered the archipelago from the Korean Peninsula, intermingling with the Jōmon; the Yayoi 
-            period saw the introduction of practices including wet-rice farming, a new style of pottery, and metallurgy
-            from China and Korea.According to legend, Emperor Jimmu (descendant of Amaterasu) founded a kingdom in 
-            central Japan in 660 BC, beginning a continuous imperial line.Japan first appears in written history 
-            in the Chinese Book of Han, completed in 111 AD. Buddhism was introduced to Japan from Baekje(a Korean kingdom)
-            in 552, but the development of Japanese Buddhism was primarily influenced by China. Despite early resistance, 
-            Buddhism was promoted by the ruling class,including figures like Prince Shōtoku, and gained widespread 
-            acceptance beginning in the Asuka period (592–710).In 645, the government led by Prince Naka no Ōe and Fujiwara 
-            no Kamatari devised and implemented the far-reaching Taika Reforms. The Reform began with land reform, based on 
-            Confucian ideas and philosophies from China. It nationalized all land in Japan, to be distributed equally among
-            cultivators, and ordered the compilation of a household registry as the basis for a new system of taxation. The 
-            true aim of the reforms was to bring about greater centralization and to enhance the power of the imperial court, 
-            which was also based on the governmental structure of China. Envoys and students were dispatched to China to learn 
-            about Chinese writing, politics, art, and religion. The Jinshin War of 672, a bloody conflict between Prince 
-            Ōama and his nephew Prince Ōtomo, became a major catalyst for further administrative reforms. These reforms culminated 
-            with the promulgation of the Taihō Code, which consolidated existing statutes and established the structure of the central
-            and subordinate local governments. These legal reforms created the ritsuryō state, a system of Chinese-style centralized 
-            government that remained in place for half a millennium.
-    </h4>
-
-
-<h1>UiTM Branches in Malaysia</h1>
-
-<img src="images/map-of-malaysia-vector-1607161.jpg" usemap="#image-map">
-
-!-- Image Map Generated by http://www.image-map.net/ -->
-<img src="map-of-malaysia-vector-1607161.jpg" usemap="#image-map">
-
-<map name="image-map">
-    <area target="_blank" alt="UiTM JOHOR" title="UiTM JOHOR" href="https://johor.uitm.edu.my/" 
-    coords="281,384,397,468" shape="rect">
-    <area target="_blank" alt="UiTM NEGERI SEMBILAN" title="UiTM NEGERI SEMBILAN" 
-    href="https://nsembilan.uitm.edu.my/" coords="246,353,25" shape="circle">
-    <area target="_blank" alt="UiTM KEDAH" title="UiTM KEDAH" href="https://kedah.uitm.edu.my/" 
-    coords="110,59,105,70,94,74,103,86,103,100,108,115,107,125,114,126,109,132,117,133,122,141,122,153,122,161,127,167,134,156,145,151,148,139,156,122,157,115,161,109,166,104,166,98,166,92,165,85,159,78,153,82,147,75,145,68,139,64,134,67,126,59,118,57" shape="poly">
-</map>
+    <br>
+   
+    <section>
+    <button onclick="history.back(-1)">Go Back</button>
+     <button><a href="#top">Back to Top</a></button>
+    </section>
     </body>
 </html>

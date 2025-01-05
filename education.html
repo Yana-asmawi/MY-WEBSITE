@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <title>My Education</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+  <style>
+    
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #ca99ab;
+    color: #ffffff;
+}
+
+td {
+    background-color: #ca99ab;
+    color: #fff;
+}
+
+h1{
+    font-size: clamp(1rem, 2rem + 5vw, 3rem);
+}
+
+h1{
+    color: lavenderblush;
+    text-shadow: 0 0 10px lavender;
+}
+
+img:hover{
+    transform: scale(1.05);
+    border-color: #ca99ab;
+}
+
+img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #ca99ab;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+}
+</style>
+  <body>
+   
+    <header>
+      <div class="header">
+          <span>Hello Everyone</span>
+        </div>
+        <div class="image">
+        <img src="images/mine.jpg.jpg" alt="">
+      </div>
+
+      <nav>
+          <div class="nav-container"></div>
+
+          <ul>
+              <div class="links"></div>
+              <li><a href="index.html" target="_parent"></a>Home</a></li>
+              <li><a href="gallery.html" target="_self">Gallery</a></li>
+              <li><a href="education.html" target="_self">Education</a></li>
+              <li><a href="life.html" target="_self">My Life</a></li>
+            </ul>
+      </nav>
+  </header>
+  <font color="white">
+    <h1>My Education</h1></font>
+
+    <table>
+      <tr>
+          <th>Year</th>
+          <th>School Name</th>
+          <th>Picture</th>
+      </tr>
+      <tr>
+          <td>2009-2010</td>
+          <td>Pra Sekolah JAIS</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>2011-2016</td>
+          <td>Sekolah Rendah Agama Integrasi Datoo' Mufti Yusoff Sahabuddin Seksyen 7</td>
+          <td><a target="_self" href="images/SRAI.jpg">
+            <img src="images/SRAI.jpg" alt="image1" onclick="openModal(this)">
+        </a></td>
+      </tr>
+      <tr>
+          <td>2017-2021</td>
+          <td>Sekolah Menengah Kebangsaan Seksyen 7.</td>
+          <td><a target="_self" href="images/SMKS7.jpg">
+            <img src="images/SMKS7.jpg" alt="image2" onclick="openModal(this)">
+        </a></td>
+      </tr>
+      <tr>
+          <td>2021-Now</td>
+          <td>UiTM Rembau-Diploma in Information Management.</td>
+          <td><a target="_self" href="images/rembau.jpg">
+            <img src="images/rembau.jpg" alt="image1" onclick="openModal(this)">
+        </a></td>
+      </tr>
+  </table>
+
+  <section>
+    <button onclick="history.back(-1)">Go Back</button>
+     <button><a href="#top">Back to Top</a></button>
+    </section>
+  </body>
+</html>
